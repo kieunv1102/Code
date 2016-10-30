@@ -1,0 +1,113 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formZ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IdtActivity" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#fff3e3" 
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerBanner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffebd0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layoutPromotionMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#cb7200"
+                android:text="Khuyến Mại" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#ccc4b9" />
+
+        <RelativeLayout
+            android:id="@+id/layoutNewMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#cb7200"
+                android:text="Mới Nhất" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#ccc4b9" />
+
+        <RelativeLayout
+            android:id="@+id/layoutOrdestMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#cb7200"
+                android:text="Mua Nhiều Nhất" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout" >
+
+        <ListView
+            android:id="@+id/lvAllProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameLayout" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/viewDialogMenu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/floatbuttonmenuopen"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

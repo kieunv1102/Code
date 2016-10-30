@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.ce.sale"
+    android:installLocation="auto"
+    android:versionCode="02"
+    android:versionName="1.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />
+	<uses-feature android:name="android.hardware.camera.autofocus"/>    
+    <uses-feature android:name="android.hardware.camera" />
+    -->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="false"
+        android:icon="@drawable/vi21_logo"
+        android:label="Chim Én"
+        android:theme="@style/AppBaseTheme" >
+
+        <!--
+             <activity
+            android:name="vn.ce.sale.BigClusteringDemoActivity1"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateVisible" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".BigClusteringDemoActivity1" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+                    android:configChanges="keyboardHidden|orientation|screenSize"
+        adjustPan|adjustResize|stateVisible
+        -->
+        <activity
+            android:name=".HomeSwallow"
+            android:launchMode="singleTask"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".HomeSwallow" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity1" >
+        </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".HomeActivity" >
+        </activity>
+        <activity
+            android:name=".HomeActivity2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LoginSwallowActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LoginActivity1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RegisterUser"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".HomeScreenActivity" />
+        <activity
+            android:name=".ReportPicture"
+            android:configChanges="keyboardHidden|orientation"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.dm.zbar.android.examples.MainActivity"
+            android:label="QRCode" />
+        <activity
+            android:name=".ReportOrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity1" />
+        <activity android:name=".PolyDecodeDemoActivity" />
+        <activity android:name=".IconGeneratorDemoActivity" />
+        <activity android:name=".DistanceDemoActivity" />
+        <activity android:name=".BigClusteringDemoActivity2" />
+        <activity android:name=".ClusteringDemoActivity" />
+        <activity android:name=".BigClusteringDemoActivity" />
+        <activity android:name=".CustomMarkerClusteringDemoActivity" />
+        <activity android:name=".TileProviderAndProjectionDemo" />
+        <activity android:name=".HeatmapsDemoActivity" />
+        <activity android:name=".HeatmapsPlacesDemoActivity" />
+        <activity android:name=".GeoJsonDemoActivity" />
+        <activity android:name=".KmlDemoActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MyLocationMapFragmentActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="vn.legacy.coppy.bongsen.BaseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="vn.legacy.coppy.bongsen.VTopupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="vn.legacy.coppy.bongsen.VTopupBuyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="vn.legacy.coppy.bongsen.VTopupServiceActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="vn.legacy.coppy.bongsen.VTopupTransferActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <!-- start qrcode -->
+        <activity
+            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <!-- service for local chat -->
+        <service android:name=".ServiceChatConnection" />
+
+        <!-- Bongsen -->
+        <activity
+            android:name="bongsen.android.v1.activity.MainActivityBongsen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.UserProfileActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.ListServicesActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- VTOPUP -->
+        <activity
+            android:name="bongsen.android.v1.activity.VTopupActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListServicesActivity" />
+        </activity>
+        <!-- VTOPUP child -->
+        <activity
+            android:name="bongsen.android.v1.activity.VTopupServiceActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bongsen.android.v1.activity.VTopupActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VTopupTransferActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bongsen.android.v1.activity.VTopupActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VTopupBuyActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bongsen.android.v1.activity.VTopupActivity" />
+        </activity>
+
+        <!-- VGOLD -->
+        <activity
+            android:name="bongsen.android.v1.activity.VGoldActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListServicesActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VGoldTransferMoneyActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VGoldActivity" />
+        </activity>
+
+        <!-- VBILL -->
+        <activity
+            android:name="bongsen.android.v1.activity.VBillActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListServicesActivity" />
+        </activity>
+
+        <!-- VPIN -->
+        <activity
+            android:name="bongsen.android.v1.activity.VPinActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListServicesActivity" />
+        </activity>
+
+        <!-- VPOST -->
+        <activity
+            android:name="bongsen.android.v1.activity.VPostActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListServicesActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VPostReceiptCODActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VPostActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VPostDeliveryCodActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VPostActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VpostMoneyDeliveryActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VPostActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VPostPaperDeliveryFailActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VPostActivity" />
+        </activity>
+        <activity
+            android:name="bongsen.android.v1.activity.VPostPagerDeliverySucessActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VPostActivity" />
+        </activity>
+        <activity android:name="bongsen.android.v1.activity.UserProfileChangePasswordActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bongsen.android.v1.activity.UserProfileActivity" />
+        </activity>
+        <activity android:name="bongsen.android.v1.activity.ApplicationSettingActivity" >
+        </activity>
+
+        <receiver android:name="com.bongsen.android.v1.sms.SMSReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <activity
+            android:name=".Test"
+            android:label="@string/title_activity_test" >
+        </activity> -->
+    </application>
+
+</manifest>

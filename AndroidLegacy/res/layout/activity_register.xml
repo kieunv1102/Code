@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+     
+	 <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/d_color_white"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:id="@+id/topPanel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	         android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="10dp"
+	        android:orientation="vertical" >
+	            <EditText
+	                android:id="@+id/title"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/background_edittext"
+	                android:inputType="textShortMessage" >
+	            </EditText>
+	
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/centerPanel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="top"
+	        android:layout_marginTop="5dp"
+	          android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	        
+	        android:layout_above="@+id/bottomPanel"
+			android:layout_below="@+id/topPanel"
+	        android:orientation="vertical" >
+			     <EditText
+			         android:id="@+id/note"
+			         android:layout_width="match_parent"
+			         android:layout_marginBottom="5dp"
+			         android:layout_marginTop="5dp"
+			         android:gravity="top"
+			         android:layout_height="match_parent"
+			         android:background="@drawable/background_edittext"
+			         android:inputType="textMultiLine" >
+			     </EditText>
+	      </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/bottomPanel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="horizontal"
+	        android:visibility="gone"
+	        android:layout_gravity="center"
+	        android:background="#ffffff"
+	        android:gravity="center" >
+	
+	         <Button
+	             android:id="@+id/activity_register_bt_login"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:layout_margin="10dp"
+	             android:layout_weight="0.5"
+	             android:textColor="#ffffff"
+	             android:background="@drawable/background_button_login_register" />
+	
+	        <Button
+	            android:id="@+id/activity_register_bt_canel"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.5"
+	            android:background="@drawable/backgroud_buttom_cane"
+	            android:textColor="#ffffff"
+	            android:layout_margin="10dp" />
+	        
+	    </LinearLayout>
+	</RelativeLayout>
+</FrameLayout>
+ 

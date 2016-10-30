@@ -1,0 +1,20 @@
+﻿ <LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/formZ"
+    android:orientation="vertical"
+    tools:context=".IdtActivity" >
+	<ProgressBar 
+			android:id="@+id/form_pb"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:visibility="visible" />
+	 <ListView
+			 android:layout_width="fill_parent"
+			 android:layout_height="fill_parent"
+			 android:id="@+id/grid_Plan"
+			 android:visibility="gone" 
+			 />
+ </LinearLayout >

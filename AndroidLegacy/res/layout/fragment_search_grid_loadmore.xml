@@ -1,0 +1,8 @@
+    <Button
+        android:id="@+id/grid_button"
+        android:text="Xem thêm"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    </Button>
+

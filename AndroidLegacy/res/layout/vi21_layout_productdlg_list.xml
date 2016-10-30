@@ -1,0 +1,47 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formZ"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IdtActivity" >
+
+    <ProgressBar
+        android:id="@+id/form_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ProgressBar>
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtSearchProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="4"
+            android:hint="Tìm kiếm sp" />
+
+        <Button
+            android:id="@+id/imbBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/grid_Customer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+</LinearLayout>

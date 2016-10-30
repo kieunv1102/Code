@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomPanel"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <vn.ce.sale.util.CircleImageView
+                android:id="@+id/imv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cashin" />
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imv"
+                android:layout_toRightOf="@+id/imv"
+                android:text="NẠP TIỀN ONLINE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtNofiCIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FC0505"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tài khoản"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edtAccountCION"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số dư"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:id="@+id/edtSoDuCION"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSoDuCION"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số tiền nạp"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:id="@+id/edtMoneyCashIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:inputType="number"
+                android:textColor="#ffffff" >
+
+                <requestFocus />
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="(VND)"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tiền nhận được"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edtMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:enabled="false"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="(VND)"
+                android:textSize="15sp"
+                android:textStyle="bold" 
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Phương thức thanh toán"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/radioButtonVietcomBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Vietcombank"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTienphongBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tienphongbank"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOrtherBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tài khoản khác"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOkCashIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thực hiện"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

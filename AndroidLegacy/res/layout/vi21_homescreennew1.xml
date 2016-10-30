@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="top">
+
+	<TextView
+	    android:id="@+id/txtStatusUserName"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="20dp"
+	    android:paddingLeft="10dp"
+	    android:paddingBottom="20dp"
+	    android:text="Xin chào ABCD"
+	    android:textSize="30sp"
+	    android:background="@color/d_color_blue2"
+	    android:textColor="@color/d_color_white" />
+
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/d_color_blue2" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

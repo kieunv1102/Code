@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dmobile</string>
+    <string name="setting">Setting</string>
+    <string name="input_text">Looking for...</string>
+    <string name="button_send">Go!</string>
+    <string name="police_stations">Police Stations in Victoria</string>
+    <string name="medicare">Medicare Offices</string>
+    <string name="attrib_format">Data from &lt;a href = "%s">data.gov.au&lt;/a>, modified under &lt;a href = \"http://creativecommons.org/licenses/by/3.0/au/\">CC BY 3.0 AU&lt;/a></string>
+    <string name="police_stations_url">http://data.gov.au/dataset/police-station-locations/resource/76110b24-0f0a-4c29-9583-3f99eaba486c</string>
+    <string name="medicare_url">http://data.gov.au/dataset/location-of-medicare-offices/resource/5d38e1be-4011-49c4-8b8b-75405eeb1088</string>
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="visibility">Toggle Vis</string>
+
+    <string-array name="heatmaps_datasets_array">
+        <item>@string/police_stations</item>
+        <item>@string/medicare</item>
+    </string-array>
+
+    <string name="title_section1">Trang chủ</string>
+    <string name="title_section2">Bản đồ</string>
+    <string name="title_section3">Đồng bộ dữ liệu</string>
+    <string name="title_section4">Thiết lập</string>
+    <string name="title_section5">Thoát</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="action_search">Search</string>
+    <string name="action_example">action_example</string>
+    <string name="action_settings">action_settings</string>
+
+    <!-- Text Login and Register -->
+    <string name="text_label_login">Upload</string>
+    <string name="text_hint_email">Tên</string>
+    <string name="text_hint_password">Mô tả</string>
+    <string name="text_label_register">Lưu</string>
+    <string name="text_label_canel">Lưu Offline</string>
+    <string name="text_label_remenber">Remember</string>
+    <string name="text_label_forget_password">Forget Password</string>
+    <string name="action_add">Thêm</string>
+    <string name="action_save">Lưu</string>
+    <string name="action_savecellid">Lưu CellID</string>
+    <string name="action_edit">Chỉnh sửa</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_refresh">Tải lại</string>
+    <string name="action_saveoffline">Lưu Offline</string>
+    <string name="action_list">Danh sách</string>
+    <string name="action_exit">Thoát</string>
+    <string name="action_mylocation">MyLocation</string>
+    <string name="search_hint">Mã Barcode...</string>
+    <string name="action_upload">Upload</string>
+    <string name="barcode">Mã Barcode</string>
+    <string name="donHang">Đơn Hàng </string>
+    <string name="ten">Tên: </string>
+    <string name="diaChi">Địa Chỉ: </string>
+    <string name="soDienThoai">Số Điện Thoại: </string>
+    <string name="prompt_password">Số Điện Thoại: </string>
+    <string name="action_sign_in_short">Số Điện Thoại: </string>
+    <string name="action_sign_in">Số Điện Thoại: </string>
+    <string name="action_dichvu">Số Điện Thoại: </string>
+    <string name="verify">Số Điện Thoại: </string>
+    <string name="pay">Số Điện Thoại: </string>
+    <string name="prompt_password">Số Điện Thoại: </string>
+    <string name="footer_ttien">Số Điện Thoại: </string>
+    <string name="sanpham">Số Điện Thoại: </string>
+    <string name="order_stt">Số Điện Thoại: </string>
+    <string name="order_ten">Số Điện Thoại: </string>
+    <string name="order_soluong">Số Điện Thoại: </string>
+    <string name="order_dongia">Số Điện Thoại: </string>
+    <string name="order_stt">Số Điện Thoại: </string>
+    <string name="order_ten">Số Điện Thoại: </string>
+    <string name="title_activity_settings">Số Điện Thoại: </string>
+    <string name="datHang">Số Điện Thoại: </string>
+    <string name="pref_title_sync_frequency">Số Điện Thoại: </string>
+    <string name="pref_title_system_sync_settings">Số Điện Thoại: </string>
+    <string name="pref_description_social_recommendations">Số Điện Thoại: </string>
+    <string name="pref_title_social_recommendations">Số Điện Thoại: </string>
+    <string name="pref_default_display_name">Số Điện Thoại: </string>
+    <string name="pref_title_display_name">Số Điện Thoại: </string>
+    <string name="pref_title_add_friends_to_messages">Số Điện Thoại: </string>
+    <string name="pref_header_general">Số Điện Thoại: </string>
+    <string name="pref_header_notifications">Số Điện Thoại: </string>
+    <string name="pref_header_data_sync">Số Điện Thoại: </string>
+    <string name="pref_title_new_message_notifications">Số Điện Thoại: </string>
+    <string name="pref_title_vibrate">Số Điện Thoại: </string>
+    <string name="action_report_search">Số Điện Thoại: </string>
+    <string name="pref_ringtone_silent">Số Điện Thoại: </string>
+    <string name="text_error_title">Số Điện Thoại: </string>
+    <string name="text_error_note">Số Điện Thoại: </string>
+    <string name="text_error_email">Số Điện Thoại: </string>
+    <string name="text_error_password">Số Điện Thoại: </string>
+    <string name="title_activity_test">Test</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

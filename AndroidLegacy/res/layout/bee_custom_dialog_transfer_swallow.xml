@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn lựa chọn hình thức nạp tiền"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:id="@+id/rdbTransfer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Chuyển tiền Ví-Ví"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rdbTransfer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chuyển tiền Ví-TKNH"
+            android:textSize="20sp" 
+            android:enabled="false"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOkTransfer"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Đồng ý" />
+
+        <Button
+            android:id="@+id/btnCancelTransfer"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Đóng" />
+    </LinearLayout>
+
+</LinearLayout>

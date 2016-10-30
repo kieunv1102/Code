@@ -1,0 +1,101 @@
+﻿<LinearLayout  
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+    >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="3dp" >
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_alignParentLeft="true"
+		     android:layout_alignParentStart="true"
+		    android:id="@+id/leftSide"
+		    android:layout_toLeftOf="@+id/rightImage"
+		    android:padding="3dp" >
+		    
+		    <TextView
+		        android:id="@+id/customer_madonhang"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Ma don hang"
+		        android:textSize="20sp"
+		        android:textStyle="bold" >
+
+		    </TextView>
+
+		    <TextView
+		        android:id="@+id/customer_tongtien"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Tong tien"
+		        android:textSize="16sp" >
+
+		    </TextView>
+
+		     <TextView
+		         android:id="@+id/customer_thoigian"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="Thoi gian"
+		         android:textSize="16sp" >
+
+		    </TextView>
+
+		    <TextView
+		        android:id="@+id/customer_capnhat"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Cap nhat"
+		        android:textSize="16sp" >
+
+		    </TextView>
+		    
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:id="@+id/rightImage"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentEnd="true"
+		    android:padding="5dp" >
+		    <ImageView
+		        android:id="@+id/imgdetail"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		       
+		        android:src="@drawable/ic_setting_grid" >
+		    </ImageView>
+		</LinearLayout>
+	</RelativeLayout>
+    <LinearLayout 
+        	android:id="@+id/detailCustomer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:visibility="gone"
+		     android:padding="5dp" >
+		    <TextView
+		        android:id="@+id/customer_detail"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		        android:text="Email:"
+		       >
+		    </TextView>
+		     <ListView
+			 android:layout_width="fill_parent"
+			 android:layout_height="fill_parent"
+			 android:id="@+id/gridCustomer"
+			 android:visibility="visible" 
+			 />
+	</LinearLayout>
+</LinearLayout>

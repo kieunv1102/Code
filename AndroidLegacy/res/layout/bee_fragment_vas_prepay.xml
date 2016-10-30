@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:id="@+id/imv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_tratruoc" />
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imv"
+            android:layout_toRightOf="@+id/imv"
+            android:text="TRẢ TRƯỚC"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtThongBaoVtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="#F90909"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lnlDisplayAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtThongBao"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtDichvu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Dịch vụ:"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <Spinner
+                android:id="@+id/spnMang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtUserPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số điện thoại:"
+                android:textStyle="bold" 
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="phone"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Số tiền:"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spnMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" 
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RadioButton
+                android:id="@+id/rdbPrepayInlandBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tài khoản ngân hàng nội địa"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbPrepayInternationalBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản ngân hàng quốc tế"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbPrepaySwallow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản chim én"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSaveAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Thực hiện" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlInputOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/edtPrepayInputOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập OTP" />
+
+        <Button
+            android:id="@+id/btnOKOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Họ tên: Nguyễn Viết Kiêu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: 0967530528" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ: 78 phạm thận duật,mai dịch,cầu giấy,hà nội" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtAccountVi21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản Vi21"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtAccountVtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản Vtop"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtAccountSwallow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản Chim én"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtAccountVnpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản VnPost"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+    
+
+</LinearLayout>

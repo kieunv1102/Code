@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LightThemeSelector" parent="android:style/Theme.Light"></style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="android:textColor">@color/d_color_blue1</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/d_yellow</item>
+        <item name="android:textColor">@color/d_gray</item>
+        <item name="android:titleTextStyle">@style/MyTextAppearance</item>
+    </style>
+
+    <style name="WhiteCheck">
+        <item name="colorAccent">#fff</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/ani_dialog_x1</item>
+        <item name="android:windowExitAnimation">@anim/ani_dialog_x2</item>
+    </style>
+
+    <style name="dialog_animation_user_bottom">
+        <item name="android:windowEnterAnimation">@anim/ani_dialog_y2</item>
+        <item name="android:windowExitAnimation">@anim/ani_dialog_y1</item>
+    </style>
+    <style name="dialog_animation_user_top">
+    <item name="android:windowEnterAnimation">@anim/ani_dialog_y1up</item>
+    <item name="android:windowExitAnimation">@anim/ani_dialog_y2up</item>
+</style>
+
+</resources>

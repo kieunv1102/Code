@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:id="@+id/imv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sodu" />
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imv"
+            android:layout_toRightOf="@+id/imv"
+            android:text="SỐ DƯ"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" 
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tài khoản:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtVasSoduUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Số dư khả dụng:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtVasSodu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" 
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtVasSoduText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ngày tạo TK:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtVasSoduDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/leftSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/rightImage"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/customer_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/d_color_blue1"
+                android:layout_weight="1"
+                android:textSize="17sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/customer_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:paddingTop="5dp" >
+            </TextView>
+            <!-- <TextView
+                android:id="@+id/customer_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingTop="5dp" >
+            </TextView> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/rightImage"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/customer_kho"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="kho"
+                android:layout_weight="1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/customer_gia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1" 
+                android:text="gia">
+            </TextView>
+            <TextView
+                android:id="@+id/customer_chanel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_weight="1" 
+                android:text="gia">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

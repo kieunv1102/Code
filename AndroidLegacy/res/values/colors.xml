@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="background_tab">#C5CCA1</color>
+    <color name="d_yellow">#ffdd15</color>
+    <color name="d_yellow_qlbh">#FCB815</color>
+    <color name="d_gray">#58595b</color>
+    <color name="d_color_blue1">#10214d</color>
+    <color name="d_color_blue2">#3a5795</color>
+    <color name="d_color_blue3">#e89022</color>
+    <color name="d_color_vnpost_orange">#FCB815</color>
+    <color name="d_color_vnpost_blue">#184788</color>
+    <color name="d_color_table_title_background">#808080</color>
+    <color name="d_color_table_title_background_applestyle">#323232</color>
+    <color name="d_color_white">#ffffff</color>
+    <!-- Bong sen -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0002A8</color>
+    <color name="green">#C8C8FF</color>
+    <color name="mau_nen_menu">#39394A</color>
+    <color name="mau_nen_title_menu">#414156</color>
+    <color name="face">#456099</color>
+    <color name="title_button">#D3D6DB</color>
+    <color name="map_tron">#DCFFFF</color>
+    <color name="header_menu">#B20570</color>
+    <color name="gray">#A6ACA9</color>
+    <color name="light_green">#8BC53F</color>
+
+</resources>

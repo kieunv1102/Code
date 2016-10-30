@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/v21logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/logologin2"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/activity_login_tv_title_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/border_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_login_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Nhập tài khoản đăng nhập"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <EditText
+            android:id="@+id/activity_login_edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/activity_login_cb_remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="0.5"
+            android:button="@xml/custom_checkbok"
+            android:text="Nhớ mật khẩu"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/activity_login_cb_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:buttonTint="#ffffff"
+            android:text="Đăng nhập offline"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="230dp" >
+
+        <Button
+            android:id="@+id/activity_login_bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/buttonlogin"
+            android:fontFamily="sans-serif"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/view_loading_data_form_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnBongSen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bông Sen App"
+        android:visibility="gone" />
+
+</LinearLayout>

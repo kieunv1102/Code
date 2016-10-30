@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="idt.vn.framework1.MainActivity" >
+
+    <item
+        android:id="@+id/action_example"
+        android:title="@string/title_section1"
+        app:actionViewClass="android.support.v7.widget.SearchView" 
+        app:showAsAction="withText|ifRoom|collapseActionView"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="never"/>
+
+</menu>

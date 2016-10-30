@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="vn.zopost.sale.NavigationDrawerFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" 
+            android:visibility="visible">
+
+            <vn.ce.sale.util.CircleImageView
+                android:id="@+id/imvUser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/backimvproduct" />
+
+            <TextView
+                android:id="@+id/txtUserDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#34B4F9"
+                android:text="Thông tin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#938989" />
+
+        <LinearLayout
+            android:id="@+id/lnlPersonalInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tên: Nguyễn Viết Kiêu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: Số 7, Phạm Thận Duật, Mai Dịch, Cầu Giấy, Hà Nội. " />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: 0967530528" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccc"
+        android:choiceMode="singleChoice"
+        android:visibility="visible"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+         >
+    </ListView>
+
+</LinearLayout>

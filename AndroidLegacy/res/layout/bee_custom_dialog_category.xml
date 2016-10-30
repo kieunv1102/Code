@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/transparent" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/giohang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Giỏ Hàng" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/giohang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Đơn Hàng" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/giohang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Nộp Tiền" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent" >
+
+        <vn.ce.sale.util.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/giohang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Trả Hàng" />
+    </RelativeLayout>
+
+</LinearLayout>

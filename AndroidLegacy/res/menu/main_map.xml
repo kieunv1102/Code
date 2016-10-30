@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="vn.pcx.bts.BigClusteringDemoActivity1" >
+    
+	<item android:id="@+id/action_search"
+          android:title="@string/action_search"
+          android:icon="@drawable/ic_action_search"
+          app:showAsAction="ifRoom|collapseActionView"
+          app:actionViewClass="android.support.v7.widget.SearchView"
+       />
+      <item
+        android:id="@+id/action_save"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_action_save"
+        app:showAsAction="ifRoom"/>
+     <item
+        android:id="@+id/action_list"
+        android:title="@string/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        app:showAsAction="ifRoom"/>
+      <item
+        android:id="@+id/action_mylocation"
+        android:title="@string/action_mylocation"
+        android:icon="@drawable/ic_action_location_found"
+        app:showAsAction="ifRoom"/>
+      <item
+        android:id="@+id/action_exit"
+        android:title="@string/action_exit"
+        android:icon="@drawable/ic_action_back"
+        app:showAsAction="ifRoom"/>
+    
+</menu>
