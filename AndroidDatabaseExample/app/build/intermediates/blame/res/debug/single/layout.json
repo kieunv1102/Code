@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_layout.xml",
+        "source": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\src\\main\\res\\layout\\row_layout.xml"
+    },
+    {
+        "merged": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_rcv_sql.xml",
+        "source": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\src\\main\\res\\layout\\item_rcv_sql.xml"
+    },
+    {
+        "merged": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_book.xml",
+        "source": "D:\\Application\\AndroidStudio\\Project\\AndroidDatabaseExample\\app\\src\\main\\res\\layout\\activity_book.xml"
+    }
+]
